@@ -1,0 +1,127 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+:root{
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+   
+}
+.dark-theme{
+    --primary-color: #00020b;
+    --secondary-color: #fff;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    font-family: sans-serif;
+  
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+   
+}
+nav{
+    width: 86%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#moon{
+    cursor: pointer;
+    width: 25px;
+   margin-bottom: 4px;
+   margin-left: 3px;
+}
+nav ul{
+    flex: 2;
+    text-align: right;
+}
+.logo{
+    cursor: pointer;
+    width: 100px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:var( --secondary-color);
+}
+nav ul li a:hover{
+    
+    color:#ff4321;
+}
+.info{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+.info h1{
+    font-size: 70px;
+    color:var( --secondary-color);
+    margin-bottom: 20px;
+}
+span{
+    color:#ff4321;
+}
+.info p{
+    color: var( --secondary-color);
+    line-height: 22px;
+}
+.info a{
+    background-color: var( --secondary-color);
+    padding: 10px 18px;
+    text-transform: none;
+    color:var(--primary-color);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0%;
+    right: 100px;
+   
+}
+.img-box img{
+    height: 100%;
+    position: absolute;
+    left: 60%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    transition: all 1.3s;
+}
+.img-box:hover #backImg{
+bottom:40px;
+transition: all 0.7s;
+  
+}
+.img-box:hover #frontImg{
+    left:55%;
+    transition: all 0.7s;
+    }
+.social-links{
+    margin-left: 8%;
+    margin-top: 80px;
+}
+.social-links a{
+    font-size: 25px;
+    color:var( --secondary-color);
+    margin-left: 20px;
+}
+.social-links a:hover{
+    color:#ff4321;
+}
